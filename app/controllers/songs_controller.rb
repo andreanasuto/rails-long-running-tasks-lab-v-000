@@ -50,6 +50,7 @@ class SongsController < ApplicationController
       song = Song.create(title: lead[0])
       song.artist = lead[1]
     end
+    redirect_to songs_path
   end
 
   private
